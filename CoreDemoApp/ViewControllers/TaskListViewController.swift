@@ -21,6 +21,7 @@ class TaskListViewController: UITableViewController {
         setupNavigationBar()
         taskList = StorageManager.shared.fetchData()
     }
+    
     //MARK: - Private Methods
     private func setupNavigationBar() {
         title = "Task List"
@@ -52,6 +53,7 @@ class TaskListViewController: UITableViewController {
         showAlert(with: "New Task", and: "What do you want to do?", .save)
     }
 }
+
 //MARK: - AlertController
 extension TaskListViewController {
     private func showAlert(
