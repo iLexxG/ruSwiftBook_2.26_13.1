@@ -69,7 +69,6 @@ class StorageManager {
         switch action {
         case .save:
             let task = Task(context: viewContext)
-            print(task)
             task.title = taskName
         case .delete:
             viewContext.delete(taskForAction)
